@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Color Converter</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<main>
+			<h1>Color Converter</h1>
+			<form name="colorConverter">
+				<div class="blocks">
+					<div><input name="color" type="color" value="#000000"></div>
+					<div><input name="textHEX" type="text" maxlength="7" value="#000000"></div>
+					<div>
+						<div>
+							<input id="upper" name="radioLetter" type="radio" checked>
+							<label for="upper">Upper case</label>
+						</div>
+						<div>
+							<input id="lower" name="radioLetter" type="radio">
+							<label for="lower">Lower case</label>
+						</div>
+					</div>
+				</div>
+				<div class="blocks">
+					<table>
+						<tr>
+							<td>R</td>
+							<td><input name="rangeRGB_R" type="range" min="0" max="255" step="1" value="0"></td>
+							<td><input name="numberRGB_R" type="number" min="0" max="255" step="1" value="0"></td>
+						</tr>
+						<tr>
+							<td>G</td>
+							<td><input name="rangeRGB_G" type="range" min="0" max="255" step="1" value="0"></td>
+							<td><input name="numberRGB_G" type="number" min="0" max="255" step="1" value="0"></td>
+						</tr>
+						<tr>
+							<td>B</td>
+							<td><input name="rangeRGB_B" type="range" min="0" max="255" step="1" value="0"></td>
+							<td><input name="numberRGB_B" type="number" min="0" max="255" step="1" value="0"></td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>C</td>
+							<td><input name="rangeCMY_C" type="range" min="0" max="100" step="1" value="100"></td>
+							<td><input name="numberCMY_C" type="number" min="0" max="100" step="1" value="100"></td>
+						</tr>
+						<tr>
+							<td>M</td>
+							<td><input name="rangeCMY_M" type="range" min="0" max="100" step="1" value="100"></td>
+							<td><input name="numberCMY_M" type="number" min="0" max="100" step="1" value="100"></td>
+						</tr>
+						<tr>
+							<td>Y</td>
+							<td><input name="rangeCMY_Y" type="range" min="0" max="100" step="1" value="100"></td>
+							<td><input name="numberCMY_Y" type="number" min="0" max="100" step="1" value="100"></td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>H</td>
+							<td><input name="rangeHSV_H" type="range" min="0" max="360" step="1" value="0"></td>
+							<td><input name="numberHSV_H" type="number" min="0" max="360" step="1" value="0"></td>
+						</tr>
+						<tr>
+							<td>S</td>
+							<td><input name="rangeHSV_S" type="range" min="0" max="100" step="1" value="0"></td>
+							<td><input name="numberHSV_S" type="number" min="0" max="100" step="1" value="0"></td>
+						</tr>
+						<tr>
+							<td>V</td>
+							<td><input name="rangeHSV_V" type="range" min="0" max="100" step="1" value="0"></td>
+							<td><input name="numberHSV_V" type="number" min="0" max="100" step="1" value="0"></td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>H</td>
+							<td><input name="rangeHSL_H" type="range" min="0" max="360" step="1" value="0"></td>
+							<td><input name="numberHSL_H" type="number" min="0" max="360" step="1" value="0"></td>
+						</tr>
+						<tr>
+							<td>S</td>
+							<td><input name="rangeHSL_S" type="range" min="0" max="100" step="1" value="0"></td>
+							<td><input name="numberHSL_S" type="number" min="0" max="100" step="1" value="0"></td>
+						</tr>
+						<tr>
+							<td>L</td>
+							<td><input name="rangeHSL_L" type="range" min="0" max="100" step="1" value="0"></td>
+							<td><input name="numberHSL_L" type="number" min="0" max="100" step="1" value="0"></td>
+						</tr>
+					</table>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>
